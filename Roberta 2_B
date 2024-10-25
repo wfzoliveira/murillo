@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site de Jogos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Site de Jogos!</h1>
+    <div id="game-container"></div>
+    <script src="scripts.js"></script>
+</body>
+</htmbody {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+#game-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+}l>
+document.addEventListener('DOMContentLoaded', () => {
+    const gameContainer = document.getElementById('game-container');
+    
+    gameContainer.innerHTML = '<p>Inicie seu jogo aqui!</p>';
+    
+    // Exemplo de um jogo simples de clique
+    gameContainer.addEventListener('click', () => {
+        alert('Você clicou no jogo!');
+    });
+});
